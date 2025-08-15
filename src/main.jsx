@@ -12,9 +12,11 @@ if (!PUBLISHABLE_KEY) {
   throw new Error('Add your Clerk Publishable Key to the .env file')
 }
 
+const BASE = import.meta.env.BASE_URL;
+
 createRoot(document.getElementById('root')).render(
-  <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
-  <BrowserRouter basename="/myhotel">
+  <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl={BASE}>
+  <BrowserRouter basename={BASE}>
     <App />
   </BrowserRouter>
   </ClerkProvider>,
