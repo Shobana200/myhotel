@@ -19,8 +19,8 @@ const App =() => {
       {false && <HotelReg />}
       <div className='min-h-[70vh]'>
       <Routes>
-          <Route path='/myhotel' element={ <Home />} />
-          <Route path='/myhotel/rooms' element={ <AllRooms />} />
+          <Route path='/' element={ <Home />} />
+          <Route path='/rooms' element={ <AllRooms />} />
           <Route path='/rooms/:id' element={ <RoomDetails />} />
           <Route path='/my-bookings' element={ <MyBookings />} />
           <Route path='/owner' element={<Layout />}>
