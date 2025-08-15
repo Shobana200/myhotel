@@ -8,9 +8,9 @@ const ExclusiveOffers = () => {
         <div className='flex flex-col items-center justify-between  w-full md:flex-row'>
             <Title align='left' title='EXCLUSIVE OFFERS' subTitle='Take advantage of our limited-time offers and special packages to 
             enhance your stay and create unforgettable memories.'/>
-            <button className='group flex items-center gap-2 font-medium cursor-pointer max-md:mt-12'> View All Offers
+            {/* <button className='group flex items-center gap-2 font-medium cursor-pointer max-md:mt-12'> View All Offers
                 <img src={assets.arrowIcon} alt="arrow-icon" className='group-hover:translate-x-1 transition-all'/>
-            </button>
+            </button> */}
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6'>
