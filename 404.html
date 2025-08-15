@@ -1,14 +1,27 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Booking</title>
-    <script type="module" crossorigin src="/myhotel/assets/index-syJUiXQv.js"></script>
-    <link rel="stylesheet" crossorigin href="/myhotel/assets/index-BDKC0EPB.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+        // https://github.com/rafgraph/spa-github-pages
+        (function () {
+            var l = window.location;
+            var repoSegmentCount = 2; // /username/repo
+            var pathSegments = l.pathname.split('/').filter(Boolean);
+
+            var newUrl =
+                l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                '/' + pathSegments.slice(0, repoSegmentCount).join('/') + '/?/' +
+                pathSegments.slice(repoSegmentCount).join('/') +
+                (l.search ? '&' + l.search.slice(1) : '') + l.hash;
+
+            l.replace(newUrl);
+        })();
+    </script>
+</head>
+
+<body></body>
+
 </html>
