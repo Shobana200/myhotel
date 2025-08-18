@@ -24,10 +24,10 @@ const ExclusiveOffers = () => {
                     <p> {item.description}</p>
                     <p className='text-xs text-white/70 mt-3'> Expires {item.expiryDate}</p>
                 </div>   
-                     <button className='flex items-center gap-2 font-medium cursor-pointer mt-4 mb-5'> 
+                     {/* <button className='flex items-center gap-2 font-medium cursor-pointer mt-4 mb-5'> 
                         View Offers 
                         <img src={assets.arrowIcon} alt="arrow-icon" className='invert group-hover:translate-x-1 transition-all'/>
-                    </button>     
+                    </button>      */}
                 </div>
             ))}
         </div>
